@@ -26,8 +26,8 @@ namespace CourseLibrary.API.Controllers
 			_mapper = mapper ??
 					throw new ArgumentNullException(nameof(mapper));
 		}
-		//made some changes
-		[HttpGet]
+		//made some changes here
+		[HttpGet()]
 		[HttpHead]
 		public ActionResult<IEnumerable<AuthorDto>> GetAuthors([FromQuery] AuthorsResourceParameters authorsResourceParameters)
 		{
